@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom"
 import TaskList from './TaskList';
 import TaskForm from './TaskForm'
 import Home from './Home';
+import { Switch } from 'react-router-dom';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Switch>
       <Route path="/">
         <Home />
       </Route>
@@ -24,6 +26,7 @@ function App() {
       <Route path="/TaskList">
         <TaskList />
       </Route>
+      </Switch>
     </div>
   );
 }

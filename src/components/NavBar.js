@@ -1,12 +1,14 @@
 import React from "react";
 import TaskList from "./TaskList";
 import TaskForm from "./TaskForm";
+import {NavLink} from "react-router-dom"
 
 function NavBar() {
     return (
         <div>
-            <a href='./TaskList'>Running Task List</a>
-            <a href='./TaskForm'>Running Task List</a>
+            <NavLink className='navLink' to="/">Home</NavLink>
+            <NavLink className='navLink' to="/TaskForm">New Task</NavLink>
+            <NavLink className='navLink' to="/TaskList">All The Tasks</NavLink>
 
         </div>
     )
