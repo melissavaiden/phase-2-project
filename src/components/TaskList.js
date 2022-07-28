@@ -1,9 +1,9 @@
 import React from "react";
 
-function TaskLog() {
+function TaskList() {
     return (
         <div>Whole list of tasks</div>
     )
 }
 
-export default TaskLog;
+export default TaskList;
