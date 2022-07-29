@@ -1,10 +1,12 @@
 import React from "react";
+import NavBar from "./NavBar";
 import TaskCard from "./TaskCard";
 
 function TaskList() {
     return (
         <div>
-            <TaskCard />
+            <NavBar />
+            {/* <TaskCard /> */}
         </div>
     )
 }

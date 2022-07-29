@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavBar from "./NavBar";
 
 function TaskForm({addTask}) {
     const [taskName, setTaskName] = useState('Cleaning')
@@ -31,6 +32,7 @@ function TaskForm({addTask}) {
 
     return (
          <form onSubmit={handleSubmit}>
+             <NavBar />
             <label>
                 Task Name:
                 <select onChange={handleNameChange}>
