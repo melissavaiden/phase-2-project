@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function TaskForm() {
+    const [taskName, setTaskName] = useState('Cleaning')
+    const [taskTime, setTaskTime] = useState('')
+    const [taskDate, setTaskDate] = useState('')
+
+    function handleNameChange(event) {
+        setTaskName(event.target.value)
+    }
+
+    function handleTimeChange(event) {
+        setTaskTime(event.target.value)
+    }
+
+    function handleDateChange(event) {
+        setTaskDate(event.target.value)
+        console.log(taskDate)
+    }
+
     return (
          <form>
             <label>
                 Task Name:
-                <select>
+                <select onChange={handleNameChange}>
                     <option>Cleaning</option>
                     <option>Cooking</option>
                     <option>Homework</option>
@@ -17,13 +34,14 @@ function TaskForm() {
             </label>
             <label>
                 Minutes Spent:
-                <input type='number'></input>
+                <input type='number' onChange={handleTimeChange}></input>
             </label>
             <br></br>
             <label>
                 Date:
-                <input type='date'></input>
+                <input type='date' onChange={handleDateChange}></input>
             </label>
+            <button type="submit">Submit</button>
         </form>
     )
 }

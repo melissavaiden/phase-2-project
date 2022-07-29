@@ -18,14 +18,14 @@ function App() {
   return (
     <div className="App">
       <Switch>
-      <Route path="/">
-        <Home tasks={tasks}/>
-      </Route>
       <Route path="/TaskForm">
         <TaskForm />
       </Route>
       <Route path="/TaskList">
         <TaskList />
+      </Route>
+      <Route exact path="/">
+        <Home tasks={tasks}/>
       </Route>
       </Switch>
     </div>
