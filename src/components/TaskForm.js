@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-function TaskForm() {
+function TaskForm({addTask}) {
     const [taskName, setTaskName] = useState('Cleaning')
     const [taskTime, setTaskTime] = useState('')
     const [taskDate, setTaskDate] = useState('')
+    const [newTask, setNewTask] = useState('')
 
     function handleNameChange(event) {
         setTaskName(event.target.value)
@@ -15,11 +16,21 @@ function TaskForm() {
 
     function handleDateChange(event) {
         setTaskDate(event.target.value)
-        console.log(taskDate)
+    }
+
+    function handleSubmit() {
+        setNewTask (
+            {
+                name: taskName,
+                time: taskTime,
+                date: taskDate,
+            }
+        )
+        addTask(newTask)
     }
 
     return (
-         <form>
+         <form onSubmit={handleSubmit}>
             <label>
                 Task Name:
                 <select onChange={handleNameChange}>

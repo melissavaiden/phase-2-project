@@ -1,8 +1,11 @@
 import React from "react";
+import TaskCard from "./TaskCard";
 
 function TaskList() {
     return (
-        <div>Whole list of tasks</div>
+        <div>
+            <TaskCard />
+        </div>
     )
 }
 

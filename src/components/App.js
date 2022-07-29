@@ -13,16 +13,21 @@ function App() {
     .then((r) => r.json())
     .then((tasks) => setTasks(tasks))
     },[])
+
+    function handleAddTask(newTask) {
+      setTasks([...tasks, newTask])
+    }
+    console.log(tasks)
     
 
   return (
     <div className="App">
       <Switch>
       <Route path="/TaskForm">
-        <TaskForm />
+        <TaskForm addTask={handleAddTask}/>
       </Route>
       <Route path="/TaskList">
-        <TaskList />
+        <TaskList tasks={tasks}/>
       </Route>
       <Route exact path="/">
         <Home tasks={tasks}/>
