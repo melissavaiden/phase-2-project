@@ -5,7 +5,11 @@ function TaskForm({addTask}) {
     const [taskName, setTaskName] = useState('Cleaning')
     const [taskTime, setTaskTime] = useState('')
     const [taskDate, setTaskDate] = useState('')
-    const [newTask, setNewTask] = useState('')
+    const [newTask, setNewTask] = useState({
+        name:'',
+        time:'',
+        date:'',
+    })
 
     function handleNameChange(event) {
         setTaskName(event.target.value)
@@ -19,20 +23,27 @@ function TaskForm({addTask}) {
         setTaskDate(event.target.value)
     }
 
-    function handleSubmit() {
-        setNewTask (
-            {
-                name: taskName,
-                time: taskTime,
-                date: taskDate,
-            }
+    function handleSubmit(event) {
+        setNewTask ({
+            name: taskName,
+            time: taskTime,
+            date: taskDate,
+        }
         )
-        addTask(newTask)
+        event.preventDefault();
+        fetch("http://localhost:3000/tasks", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newTask),
+          });
     }
 
     return (
          <form onSubmit={handleSubmit}>
-             <NavBar />
+            <h1 className="pageTitle">Log a New Task</h1>
+            <NavBar />
             <label>
                 Task Name:
                 <select onChange={handleNameChange}>

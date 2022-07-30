@@ -16,9 +16,7 @@ function App() {
 
     function handleAddTask(newTask) {
       setTasks([...tasks, newTask])
-    }
-    console.log(tasks)
-    
+    }    
 
   return (
     <div className="App">
