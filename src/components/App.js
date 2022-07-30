@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Switch>
       <Route path="/TaskForm">
-        <TaskForm addTask={handleAddTask}/>
+        <TaskForm addTask={handleAddTask} tasks={tasks}/>
       </Route>
       <Route path="/TaskList">
         <TaskList tasks={tasks}/>
