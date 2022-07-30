@@ -15,6 +15,7 @@ function App() {
     },[])
 
     function handleAddTask(newTask) {
+      console.log(newTask)
       setTasks([...tasks, newTask])
     }    
 

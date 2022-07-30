@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 
 function TaskForm({addTask}) {
@@ -6,38 +6,45 @@ function TaskForm({addTask}) {
     const [taskTime, setTaskTime] = useState('')
     const [taskDate, setTaskDate] = useState('')
     const [newTask, setNewTask] = useState({
-        name:'',
-        time:'',
-        date:'',
+        id:"",
+        name:"",
+        time:"",
+        date:"",
     })
 
     function handleNameChange(event) {
         setTaskName(event.target.value)
+        console.log(taskName)
     }
 
     function handleTimeChange(event) {
         setTaskTime(event.target.value)
+        console.log(taskTime)
+
     }
 
     function handleDateChange(event) {
         setTaskDate(event.target.value)
+        console.log(taskDate)
+
     }
 
-    function handleSubmit(event) {
-        setNewTask ({
-            name: taskName,
-            time: taskTime,
-            date: taskDate,
-        }
-        )
-        event.preventDefault();
+    useEffect(() => {
         fetch("http://localhost:3000/tasks", {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(newTask),
-          });
+           headers: {
+                "Content-Type": "application/json",
+               },
+           body: JSON.stringify(newTask),
+             }); 
+    },[newTask])
+
+    function handleSubmit() {
+        setNewTask({
+            name:taskName,
+            time:taskTime,
+            date:taskDate
+        })
     }
 
     return (
