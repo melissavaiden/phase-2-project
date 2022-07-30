@@ -16,8 +16,7 @@ function TaskForm({addTask}) {
         })
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
+    function handleSubmit() {
         fetch("http://localhost:3000/tasks", {
             method: "POST",
            headers: {

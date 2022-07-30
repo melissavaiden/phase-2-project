@@ -13,85 +13,16 @@
       "date": "2022-07-29"
     },
     {
-      "id": 3,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 4,
-      "name": "Cooking",
+      "name": "Homework",
       "time": "1",
-      "date": "2022-07-29"
-    },
-    {
-      "id": 5,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 6,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 7,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 8,
-      "name": "Cooking",
-      "time": "1",
-      "date": "2022-07-30"
-    },
-    {
-      "id": 9,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 10,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 11,
-      "name": "Cooking",
-      "time": "1",
-      "date": "2022-07-28"
-    },
-    {
-      "id": 12,
-      "name": "Sleep",
-      "time": "1",
-      "date": "2022-07-29"
-    },
-    {
-      "id": 13,
-      "name": "",
-      "time": "",
-      "date": ""
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
+      "date": "2022-07-30",
+      "id": 3
     },
     {
       "name": "Cooking",
       "time": "1",
-      "date": "2022-07-27",
-      "id": 17
+      "date": "2022-07-30",
+      "id": 4
     }
   ]
 }
