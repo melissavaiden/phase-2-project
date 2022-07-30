@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "name": "Excercise",
+      "name": "Exercise",
       "time": "60",
       "date": "2022-07-29"
     },
@@ -17,12 +17,6 @@
       "time": "10",
       "date": "2022-07-29",
       "id": 3
-    },
-    {
-      "name": "",
-      "time": "10",
-      "date": "2022-07-29",
-      "id": 4
     },
     {
       "name": "Cleaning",

@@ -45,7 +45,7 @@ function TaskForm({addTask}) {
                     <option>Homework</option>
                     <option>Sleep</option>
                     <option>Hanging out with friends</option>
-                    <option>Excercise</option>
+                    <option>Exercise</option>
                 </select>
                 <br></br>
             </label>

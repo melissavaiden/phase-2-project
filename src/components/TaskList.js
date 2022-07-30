@@ -1,25 +1,15 @@
 import React from "react";
 import NavBar from "./NavBar";
 import TaskCard from "./TaskCard";
+import TaskTimeTotals from "./TaskTimeTotals";
 
 function TaskList({tasks}) {
-    const allTimes = []
-    tasks.map((task) => {
-        if (task.name === 'Cleaning') {
-            allTimes.push(Number(task.time))
-        }})
-
-
-    let sumOfTimes = allTimes.reduce((accumulator, currentValue) => {
-            return accumulator + currentValue
-        }, 0)
-
-
-    return (
+   return (
         <div>
+            <h1 className="pageTitle">Task Breakdown</h1>
             <NavBar />
+            <TaskTimeTotals tasks={tasks}/>
             <TaskCard tasks={tasks}/>
-            <div>Time Spent Cleaning: {sumOfTimes} minutes</div>
         </div>
     )
 }
