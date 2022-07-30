@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 
 function TaskForm({addTask}) {
@@ -39,6 +39,7 @@ function TaskForm({addTask}) {
             <label>
                 Task Name:
                 <select name='name' onChange={handleChange}>
+                    <option></option>
                     <option>Cleaning</option>
                     <option>Cooking</option>
                     <option>Homework</option>

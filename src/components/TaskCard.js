@@ -4,8 +4,9 @@ function TaskCard({tasks}) {
     const task = tasks.map((task) => {
         return (
             <div key={task.id} className="taskCard">
-                <h2>{task.name} - {task.time}</h2>
-                <p>{task.date}</p>
+                <div className="taskCardName">{task.name}</div>
+                <div className="taskCardTime">{task.time}</div>
+                <div className="taskCardDate"> {task.date}</div>
             </div>
         )
     })
