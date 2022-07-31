@@ -8,7 +8,7 @@ function Home({tasks}) {
         <div className="home">
             <h1 className="pageTitle">Daily Habit Tracker</h1>
             <NavBar tasks={tasks}/>
-            <h2 className="todaysDate">{date}</h2>
+            <h2 className="todaysDate">Today's Date : {date}</h2>
             <TodayTaskList tasks={tasks}/>
         </div>
     )

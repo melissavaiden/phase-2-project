@@ -12,9 +12,9 @@ function TaskCard({tasks}) {
         )
     })
     return (
-        <div>
+        <span>
             {task}
-        </div>
+        </span>
     )
 }
 

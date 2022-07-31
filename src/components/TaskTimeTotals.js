@@ -1,4 +1,5 @@
 import React from "react";
+import { PieChart } from "react-minimal-pie-chart"
 
 function TaskTimeAdd({tasks}) {
     const allCleaningTimes = []
@@ -53,15 +54,22 @@ function TaskTimeAdd({tasks}) {
 
 
 
-
     return (
-        <div className="timeTotals">
-            <div>Time Spent Cleaning: {sumOfCleaningTimes} minutes</div>
-            <div>Time Spent Exercising: {sumOfExerciseTimes} minutes</div>
-            <div>Time Spent Cooking: {sumOfCookingTimes} minutes</div>
-            <div>Time Spent Homework: {sumOfHomeworkTimes} minutes</div>
-            <div>Time Spent Sleeping: {sumOfSleepTimes} minutes</div>
-            <div>Time Spent Hanging with Friends: {sumOfFriendTimes} minutes</div>
+        <div>
+            <PieChart className="pieChart"
+                 data={[
+                     { title: 'One', value: sumOfCleaningTimes, color: '#E38627' },
+                     { title: 'Two', value: sumOfExerciseTimes, color: '#C13C37' },
+                     { title: 'Three', value: 20, color: '#6A2135' },
+                 ]}/>
+            <div className="timeTotals">
+                <div>Cleaning: {sumOfCleaningTimes} minutes</div>
+                <div>Exercising: {sumOfExerciseTimes} minutes</div>
+                <div>Cooking: {sumOfCookingTimes} minutes</div>
+                <div>Homework: {sumOfHomeworkTimes} minutes</div>
+                <div>Sleeping: {sumOfSleepTimes} minutes</div>
+                <div>Hanging with Friends: {sumOfFriendTimes} minutes</div>
+            </div>
          </div>
     )
 }

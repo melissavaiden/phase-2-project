@@ -9,7 +9,9 @@ function TaskList({tasks}) {
             <h1 className="pageTitle">Task Breakdown</h1>
             <NavBar />
             <TaskTimeTotals tasks={tasks}/>
-            <TaskCard tasks={tasks}/>
+            <div className="taskCardContainer">
+                <TaskCard tasks={tasks}/>
+            </div>
         </div>
     )
 }

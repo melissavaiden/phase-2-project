@@ -4,7 +4,8 @@
     font-family: Didot;
     font-weight: bold;
     width: 50px;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
 
 }
 
@@ -12,10 +13,13 @@
     padding: 5px;
     background-color: lightpink;
     border-radius: 15px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
 }
 
 body {
-    text-align: center;
     background: #3ABCC6;
     background: -moz-radial-gradient(center, #3ABCC6 0%, #A969E7 50%, #D58BD1 100%);
     background: -webkit-radial-gradient(center, #3ABCC6 0%, #A969E7 50%, #D58BD1 100%);
@@ -37,6 +41,11 @@ body {
 .pageTitle {
     font-family: Didot;
     background-color: #7CCE97;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
 }
 
 .taskCardName {
@@ -49,10 +58,38 @@ body {
     padding: 10px;
     background-color: cornflowerblue;
     border-radius: 10px;
+    width: fit-content;
 }
 
 .timeTotals {
     font-family: Didot;
-    padding: 10px;
     font-size: larger;
+    float: right;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.selection {
+    padding: 10px;
+    font-style: Didot;
+    align-items: center;
+    margin: 10px;
+
+}
+
+
+.todaysDate {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.pieChart {
+    padding: 10px;
+    float: left;
+    height: 200px;
+    width: 200px;
+}
+
+.form {
+    text-align: center;
 }

@@ -33,12 +33,12 @@ function TaskForm({addTask}) {
         .then((newTask) => addTask(newTask))
     }
     return (
-         <form onSubmit={handleSubmit}>
+         <form  className="form" onSubmit={handleSubmit}>
             <h1 className="pageTitle">Log a New Task</h1>
             <NavBar />
-            <label>
+            <label className="selection">
                 Task Name:
-                <select name='name' onChange={handleChange}>
+                <select name='name' className="selection" onChange={handleChange}>
                     <option></option>
                     <option>Cleaning</option>
                     <option>Cooking</option>
@@ -49,14 +49,14 @@ function TaskForm({addTask}) {
                 </select>
                 <br></br>
             </label>
-            <label>
+            <label className="selection">
                 Minutes Spent:
-                <input type='number' name='time' onChange={handleChange}></input>
+                <input type='number' className="selection" name='time' onChange={handleChange}></input>
             </label>
             <br></br>
-            <label>
+            <label className="selection">
                 Date:
-                <input type='date' name='date' onChange={handleChange}></input>
+                <input type='date' className="selection" name='date' onChange={handleChange}></input>
             </label>
             <button type="submit">Submit</button>
           </form>
