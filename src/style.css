@@ -36,6 +36,8 @@ body {
     background-color: #7CCE97;
     -webkit-box-shadow: 2px 5px 43px 0px #A365AD; 
     box-shadow: 2px 5px 43px 0px #A365AD;
+    text-align: center;
+    align-items: center;
 }
 
 .pageTitle {
@@ -52,6 +54,9 @@ body {
     font-size: larger;
     font-weight: bold;
     text-decoration: underline;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .taskCardTime {
@@ -59,14 +64,20 @@ body {
     background-color: cornflowerblue;
     border-radius: 10px;
     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .timeTotals {
     font-family: Didot;
     font-size: larger;
     float: right;
-    padding: 5px;
-    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
 }
 
 .selection {
@@ -84,12 +95,20 @@ body {
 }
 
 .pieChart {
-    padding: 10px;
     float: left;
     height: 200px;
-    width: 200px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .form {
     text-align: center;
+}
+
+.taskCardContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
 }
