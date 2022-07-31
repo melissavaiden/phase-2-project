@@ -58,7 +58,7 @@ function TaskTimeAdd({tasks}) {
         <div>
             <PieChart className="pieChart"
                  data={[
-                     { title: 'One', value: sumOfCleaningTimes, color: '#E38627' },
+                     { title: 'Helloo', value: sumOfCleaningTimes, color: '#E38627' },
                      { title: 'Two', value: sumOfExerciseTimes, color: '#C13C37' },
                      { title: 'Three', value: 20, color: '#6A2135' },
                  ]}/>
