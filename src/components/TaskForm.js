@@ -1,3 +1,4 @@
+import { getAllByPlaceholderText } from "@testing-library/react";
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 
@@ -31,7 +32,6 @@ function TaskForm({addTask}) {
         .then((r) => r.json())
         .then((newTask) => addTask(newTask))
     }
-
     return (
          <form onSubmit={handleSubmit}>
             <h1 className="pageTitle">Log a New Task</h1>
@@ -44,7 +44,7 @@ function TaskForm({addTask}) {
                     <option>Cooking</option>
                     <option>Homework</option>
                     <option>Sleep</option>
-                    <option>Hanging out with friends</option>
+                    <option>Hanging out with Friends</option>
                     <option>Exercise</option>
                 </select>
                 <br></br>

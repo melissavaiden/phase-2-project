@@ -1,20 +1,25 @@
 .navLink {
     font-size: xx-large;
     text-decoration: none;  
-    padding: 100px;  
     font-family: Didot;
     font-weight: bold;
+    width: 50px;
+    padding: 20px;
+
 }
 
 .navBar {
-    padding: 10px;
+    padding: 5px;
     background-color: lightpink;
     border-radius: 15px;
 }
 
 body {
-    background-color: lavender;
     text-align: center;
+    background: #3ABCC6;
+    background: -moz-radial-gradient(center, #3ABCC6 0%, #A969E7 50%, #D58BD1 100%);
+    background: -webkit-radial-gradient(center, #3ABCC6 0%, #A969E7 50%, #D58BD1 100%);
+    background: radial-gradient(ellipse at center, #3ABCC6 0%, #A969E7 50%, #D58BD1 100%);
 }
 
 .taskCard {
@@ -22,12 +27,16 @@ body {
     padding: 30px;
     float: left;
     border: 10px solid;
+    border-color: #A365AD;
     margin: 10px;
     background-color: #7CCE97;
+    -webkit-box-shadow: 2px 5px 43px 0px #A365AD; 
+    box-shadow: 2px 5px 43px 0px #A365AD;
 }
 
 .pageTitle {
     font-family: Didot;
+    background-color: #7CCE97;
 }
 
 .taskCardName {
@@ -40,4 +49,10 @@ body {
     padding: 10px;
     background-color: cornflowerblue;
     border-radius: 10px;
+}
+
+.timeTotals {
+    font-family: Didot;
+    padding: 10px;
+    font-size: larger;
 }

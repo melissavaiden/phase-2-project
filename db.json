@@ -23,6 +23,18 @@
       "time": "10",
       "date": "2022-07-27",
       "id": 5
+    },
+    {
+      "name": "Hanging out with Friends",
+      "time": "19",
+      "date": "2022-08-03",
+      "id": 6
+    },
+    {
+      "name": "Cooking",
+      "time": "20",
+      "date": "2022-07-30",
+      "id": 7
     }
   ]
 }

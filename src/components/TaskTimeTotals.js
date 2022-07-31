@@ -55,17 +55,14 @@ function TaskTimeAdd({tasks}) {
 
 
     return (
-        <div>
+        <div className="timeTotals">
             <div>Time Spent Cleaning: {sumOfCleaningTimes} minutes</div>
             <div>Time Spent Exercising: {sumOfExerciseTimes} minutes</div>
             <div>Time Spent Cooking: {sumOfCookingTimes} minutes</div>
             <div>Time Spent Homework: {sumOfHomeworkTimes} minutes</div>
             <div>Time Spent Sleeping: {sumOfSleepTimes} minutes</div>
             <div>Time Spent Hanging with Friends: {sumOfFriendTimes} minutes</div>
-
-
-
-        </div>
+         </div>
     )
 }
 
