@@ -58,18 +58,22 @@ function TaskTimeAdd({tasks}) {
         <div>
             <PieChart className="pieChart"
                  data={[
-                     { title: 'Helloo', value: sumOfCleaningTimes, color: '#E38627' },
-                     { title: 'Two', value: sumOfExerciseTimes, color: '#C13C37' },
-                     { title: 'Three', value: 20, color: '#6A2135' },
+                     { title: 'Helloo', value: sumOfCleaningTimes, color: '#FFEA80' },
+                     { title: 'Two', value: sumOfExerciseTimes, color: '#FF8080' },
+                     { title: 'Three', value: sumOfCookingTimes, color: '#9999FF' },
+                     { title: 'Three', value: sumOfFriendTimes, color: '#66FF99' },
+                     { title: 'Three', value: sumOfSleepTimes, color: '#FF00FF' },
+                     { title: 'Three', value: sumOfHomeworkTimes, color: '#E566FF' },
+
                  ]}/>
-            <div className="timeTotals">
-                <div>Cleaning: {sumOfCleaningTimes} minutes</div>
-                <div>Exercising: {sumOfExerciseTimes} minutes</div>
-                <div>Cooking: {sumOfCookingTimes} minutes</div>
-                <div>Homework: {sumOfHomeworkTimes} minutes</div>
-                <div>Sleeping: {sumOfSleepTimes} minutes</div>
-                <div>Hanging with Friends: {sumOfFriendTimes} minutes</div>
-            </div>
+            <ul className="timeTotals">
+                <li>Cleaning: {sumOfCleaningTimes} minutes</li>
+                <li>Exercising: {sumOfExerciseTimes} minutes</li>
+                <li>Cooking: {sumOfCookingTimes} minutes</li>
+                <li>Homework: {sumOfHomeworkTimes} minutes</li>
+                <li>Sleeping: {sumOfSleepTimes} minutes</li>
+                <li>Hanging with Friends: {sumOfFriendTimes} minutes</li>
+            </ul>
          </div>
     )
 }

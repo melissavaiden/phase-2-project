@@ -5,11 +5,10 @@ function TodayTaskList({tasks}) {
     const day = fullDate.getDate();
     const month = ("0" + (fullDate.getMonth() + 1)).slice(-2)
     const year = fullDate.getFullYear();
-    let currentDay = (day) + '/' + (month)  + '/' + (year)
+    let currentDay = ("0" + (day)) + '/' + (month)  + '/' + (year)
 
     const task = tasks.map((task) => {
         const dateFormat = task.date.split('-').reverse().join('/')
-        console.log(dateFormat)
         if (dateFormat === currentDay) {
             return (
                 <div key={task.id} className="taskCard">
