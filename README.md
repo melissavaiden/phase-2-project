@@ -5,7 +5,7 @@ This app is here to help you track how you spend your day!
 ## Installation
 
 1. Open terminal and navigate to directory that you would like to clone repository into.
-2. Go to https://github.com/melissavaiden/popquiz and select the green 'Code' button.
+2. Go to https://github.com/melissavaiden/phase-2-project and select the green 'Code' button.
 3. Select SSH and copy SSH key.
 4. In the terminal, type 'git clone' followed by the SSH key and hit enter.
 5. Once the file is cloned, navagate to that file in the directory.
