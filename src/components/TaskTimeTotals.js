@@ -68,7 +68,7 @@ function TaskTimeAdd({tasks}) {
                  ]}/>
             <ul className="timeTotals">
                 <li className="cleaning">Cleaning: {sumOfCleaningTimes} minutes</li>
-                <li className="exercising">Exercising: {sumOfExerciseTimes} minutes</li>
+                <li className="exercise">Exercising: {sumOfExerciseTimes} minutes</li>
                 <li className="cooking">Cooking: {sumOfCookingTimes} minutes</li>
                 <li className="homework">Homework: {sumOfHomeworkTimes} minutes</li>
                 <li className="sleeping">Sleeping: {sumOfSleepTimes} minutes</li>

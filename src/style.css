@@ -71,12 +71,9 @@ body {
 .timeTotals {
     font-family: Didot;
     font-size: larger;
-    float: right;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    margin-top: 30px;
 }
 
 
@@ -98,7 +95,7 @@ body {
     float: left;
     height: 200px;
     width: 50%;
-    margin-left: auto;
+    margin-left: 10%;
     margin-right: auto;
     margin-top: 20px;
 }
@@ -110,5 +107,29 @@ body {
 .taskCardContainer {
     width: 100%;
     height: 100%;
-    margin-top: 30%;
+    margin-top: 10%;
+}
+
+.cleaning::marker {
+    color: #FFEA80;
+}
+
+.cooking::marker {
+    color: #9999FF;
+}
+
+.exercise::marker {
+    color: #FF8080;
+}
+
+.homework::marker {
+    color: #E566FF;
+}
+
+.friends::marker {
+    color: #66FF99;
+}
+
+.sleeping::marker {
+    color: #FF00FF;
 }
