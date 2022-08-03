@@ -14,3 +14,12 @@ This app is here to help you track how you spend your day!
 8. Enter 'npm start' to open the application in the browser. 
 
 Enjoy!
+
+## How the App Works
+
+### Home Page
+    On the Home page, you'll see all tasks that were entered on the current date. 
+### New Task
+    On the New Task page, you'll be able to enter the new task that you would like to log into the system. 
+### All The Tasks
+    On this page, you'll be able to see all of the tasks you've ever logged along with a chart that shows the amount of time you have spent historially on each task. 
