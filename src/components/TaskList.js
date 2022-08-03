@@ -10,7 +10,7 @@ function TaskList({tasks}) {
             <NavBar />
             <TaskTimeTotals tasks={tasks}/>
             <div className="taskCardContainer">
-            <TaskCard tasks={tasks}/>
+                <TaskCard tasks={tasks}/>
             </div>
         </div>
     )

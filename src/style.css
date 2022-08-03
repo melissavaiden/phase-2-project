@@ -70,7 +70,7 @@ body {
 
 .timeTotals {
     font-family: Didot;
-    font-size: larger;
+    font-size: 25px;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
@@ -133,3 +133,4 @@ body {
 .sleeping::marker {
     color: #FF00FF;
 }
+
