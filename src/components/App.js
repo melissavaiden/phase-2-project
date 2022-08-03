@@ -12,10 +12,9 @@ function App() {
       fetch('http://localhost:3000/tasks')
     .then((r) => r.json())
     .then((tasks) => setTasks(tasks))
-    },[])
+    },[tasks])
 
     function handleAddTask(newTask) {
-      console.log(newTask)
       setTasks([...tasks, newTask])
     }    
 
