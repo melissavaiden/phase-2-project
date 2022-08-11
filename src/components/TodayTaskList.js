@@ -5,7 +5,7 @@ function TodayTaskList({tasks}) {
     const day = fullDate.getDate();
     const month = ("0" + (fullDate.getMonth() + 1)).slice(-2)
     const year = fullDate.getFullYear();
-    let currentDay = ("0" + (day)) + '/' + (month)  + '/' + (year)
+    let currentDay = ((day)) + '/' + (month)  + '/' + (year)
 
     const task = tasks.map((task) => {
         const dateFormat = task.date.split('-').reverse().join('/')
